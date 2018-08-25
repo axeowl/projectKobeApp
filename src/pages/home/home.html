@@ -1,0 +1,51 @@
+<html ng-app="projectKobe">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="http://code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+  </head>
+  <body ng-controller="MainCtrl">
+    <ion-header>
+      <ion-buttons end>
+        <button ion-button (click)="logout()">
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-content class="home">
+        <img src="https://www.dropbox.com/s/f766h48qxu54nn1/ProjectKobe%281%29.png?dl=1"/>
+      </ion-content>
+    </ion-header>
+
+    <ion-content class="outer-content">
+
+      <ion-list>
+        <ion-list-header>
+          Lista della spesa
+        </ion-list-header>
+
+        <ion-item-sliding *ngFor="let p of products">
+          <ion-item>
+            <ion-avatar item-start>
+              <img src= "{{ p.path }}">
+            </ion-avatar>
+            <h2> {{ p.productName }} </h2>
+          </ion-item>
+          <ion-item-options>
+            <button (click)="deleteFunct(p.idProduct)" ion-button color="danger" icon-start>
+              <ion-icon name="trash"></ion-icon>
+            </button>
+            <button ion-button color="light" icon-start>
+              <ion-icon name="paper"></ion-icon>
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+
+
+
+      </ion-list>
+
+    </ion-content>
+  </body>
+</html>
