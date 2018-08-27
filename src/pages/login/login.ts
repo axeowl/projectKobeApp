@@ -15,7 +15,7 @@ export class Login {
   email: any;
   password: any;
 
-  registerNewUser() : boolean
+  validateUser() : boolean
   {
     var tmpString = null;
     this.restProvider.validateUser(this.registerCredentials.email, this.registerCredentials.password)
@@ -48,8 +48,9 @@ export class Login {
 
 
   public login() {
+    console.log("Ciao");
     this.showLoading();
-    if(this.registerNewUser())
+    if(this.validateUser())
     {
       setTimeout( data => {
         this.nav.push('TabsPage');

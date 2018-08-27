@@ -25,7 +25,7 @@ export class RegisterPage {
     this.auth.register(this.registerCredentials).subscribe(success => {
         if (success) {
           let info = this.auth.getUserInfo();
-          /*console.log(this.registerCredentials.password); */
+          console.log(this.registerCredentials.password);
           this.email = this.registerCredentials.email;
           this.password = this.registerCredentials.password;
           this.username = this.email.slice(0,this.email.search('@'));

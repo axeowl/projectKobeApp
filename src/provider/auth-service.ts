@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
 export class User {
@@ -15,6 +16,10 @@ export class User {
 @Injectable()
 export class AuthService {
   currentUser: User;
+
+  constructor(public http: HttpClient) {
+    console.log('Hello RestServiceProvider Provider');
+  }
 
   public login(credentials) {
     if (credentials.email === null || credentials.password === null) {
@@ -36,6 +41,11 @@ export class AuthService {
     if (credentials.email === null || credentials.password === null) {
       return Observable.throw("Please insert credentials");
     } else {
+      this.http.get('https://projectkobe.herokuapp.com/register{credential.email}/').subscribe(data => {
+        console.log(data);
+      }, err => {
+        console.log(err);
+      });
       // At this point store the credentials to your backend!
       return Observable.create(observer => {
         observer.next(true);
