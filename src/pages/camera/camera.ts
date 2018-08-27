@@ -26,5 +26,6 @@ export class CameraPage {
     }, (err) => {
       // Handle error
     });
+    alert("CIao");
   }
 }
