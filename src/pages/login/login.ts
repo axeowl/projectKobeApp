@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController, LoadingController, Loading, IonicPage } from 'ionic-angular';
+import {NavController, AlertController, LoadingController, Loading, IonicPage, IonicApp} from 'ionic-angular';
 import { AuthService } from './../../provider/auth-service';
 import { TabsPage } from '../tabs/tabs';
 import { RestServiceProvider } from "../../providers/rest-service/rest-service";
@@ -14,6 +14,7 @@ export class Login {
   registerCredentials = { email: 'benny@gmail.com', password: 'ippopotamo' };
   email: any;
   password: any;
+  app: any;
 
   validateUser() : boolean
   {
@@ -40,7 +41,8 @@ export class Login {
     return true;
   }
   constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController, public restProvider:RestServiceProvider) {
-  }
+
+}
 
   public createAccount() {
     this.nav.push('RegisterPage');

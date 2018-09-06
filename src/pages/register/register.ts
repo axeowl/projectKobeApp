@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, AlertController, IonicPage } from 'ionic-angular';
 import { AuthService } from './../../provider/auth-service';
 import { RestServiceProvider } from "../../providers/rest-service/rest-service";
+import {Login} from "../login/login";
 
 @IonicPage()
 @Component({
@@ -58,5 +59,9 @@ export class RegisterPage {
       ]
     });
     alert.present();
+  }
+
+  public loginArea() {
+    this.nav.push(Login);
   }
 }

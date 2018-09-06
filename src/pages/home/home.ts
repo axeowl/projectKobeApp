@@ -1,5 +1,5 @@
-import { Component, NgZone} from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { Component, NgZone, ViewChild} from '@angular/core';
+import {IonicPage, NavController, Nav, App, IonicApp, MenuController} from 'ionic-angular';
 import { BackgroundGeolocation, BackgroundGeolocationConfig, BackgroundGeolocationResponse } from '@ionic-native/background-geolocation';
 import { AuthService } from './../../provider/auth-service';
 import { HttpClient } from '@angular/common/http';
@@ -21,6 +21,7 @@ export class HomePage {
   email: any;
   products: any;
 
+
   getProducts() {
     this.restProvider.getProducts()
       .then(data => {
@@ -36,12 +37,7 @@ export class HomePage {
     this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
 
-  logout()
-  {
-    this.auth.logout();
-    this.navCtrl.push(Login);
-  }
-  constructor(public navCtrl: NavController, private backgroundGeolocation: BackgroundGeolocation, public zone: NgZone, private auth: AuthService, public restProvider: RestServiceProvider) {
+  constructor(public menuCtrl: MenuController, public app: IonicApp,public navCtrl: NavController, private backgroundGeolocation: BackgroundGeolocation, public zone: NgZone, private auth: AuthService, public restProvider: RestServiceProvider) {
 
     let info = this.auth.getUserInfo();
     this.username = info['name'];
@@ -83,6 +79,19 @@ export class HomePage {
   }
   ionViewDidEnter() {
     this.getProducts();
+  }
+
+  logout():void
+  {
+    this.auth.logout();
+    this.navCtrl.parent.parent.setRoot(Login);
+  }
+  openMenu()
+  {
+    if(this.menuCtrl.isOpen())
+      this.menuCtrl.close();
+    else
+      this.menuCtrl.open();
   }
 }
 

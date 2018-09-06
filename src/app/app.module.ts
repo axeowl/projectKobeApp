@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { Camera } from '@ionic-native/camera';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+  import {RegisterPage} from "../pages/register/register";
+  import {LoginModule} from "../pages/login/login.module";
 
 @NgModule({
   declarations: [

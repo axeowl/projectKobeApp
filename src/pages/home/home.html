@@ -6,22 +6,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
   </head>
+
   <body ng-controller="MainCtrl">
-    <ion-header>
-      <ion-buttons end>
-        <button ion-button (click)="logout()">
-          <ion-icon name="log-out"></ion-icon>
-        </button>
-      </ion-buttons>
-      <ion-content class="home">
-        <img src="https://www.dropbox.com/s/f766h48qxu54nn1/ProjectKobe%281%29.png?dl=1"/>
-      </ion-content>
-    </ion-header>
+
 
     <ion-content class="outer-content">
+      <ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+          <ion-list >
+            <button ion-button (click)="logout()" outline >Logout</button>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+
+      <!-- main navigation -->
+      <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
 
       <ion-list>
         <ion-list-header>
+
+          <button ion-button menuToggle="right" (click)="openMenu()"> <ion-icon name="menu"> </ion-icon></button>
           Lista della spesa
         </ion-list-header>
 
