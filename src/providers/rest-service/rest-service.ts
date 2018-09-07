@@ -52,4 +52,14 @@ export class RestServiceProvider {
       });
     });
   }
+
+  getUserInfo(id) {
+    return new Promise(resolve => {
+      this.http.get('https://projectkobe.herokuapp.com/getUserInfo'+id).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
 }

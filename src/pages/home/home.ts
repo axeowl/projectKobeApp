@@ -26,7 +26,6 @@ export class HomePage {
     this.restProvider.getProducts()
       .then(data => {
         this.products = data;
-        console.log(this.products);
       });
   }
 
