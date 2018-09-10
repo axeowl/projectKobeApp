@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @Component({
@@ -8,7 +7,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 })
 export class CameraPage {
 
-  constructor(public navCtrl: NavController, private camera: Camera) {
+  constructor( private camera: Camera) {
 
   }
   ionViewDidEnter() {

@@ -25,7 +25,6 @@ export class RegisterPage {
   public register() {
     this.auth.register(this.registerCredentials).subscribe(success => {
         if (success) {
-          let info = this.auth.getUserInfo();
           console.log(this.registerCredentials.password);
           this.email = this.registerCredentials.email;
           this.password = this.registerCredentials.password;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, AlertController, LoadingController, Loading, IonicPage, IonicApp} from 'ionic-angular';
+import {NavController, AlertController, LoadingController, Loading} from 'ionic-angular';
 import { AuthService } from './../../provider/auth-service';
 import { TabsPage } from '../tabs/tabs';
 import { RestServiceProvider } from "../../providers/rest-service/rest-service";
@@ -11,21 +11,20 @@ import { RestServiceProvider } from "../../providers/rest-service/rest-service";
 export class Login {
 
   loading: Loading;
-  registerCredentials = { email: 'benny@gmail.com', password: 'ippopotamo' };
+  registerCredentials = { email: 'benny@gmail.com', password: 'prova' };
   email: any;
   password: any;
   app: any;
 
-  validateUser() : boolean
+  validateUser()
   {
-    var tmpString = null;
+    let tmpString = null;
     this.restProvider.validateUser(this.registerCredentials.email, this.registerCredentials.password)
       .then(data => {
         tmpString = JSON.stringify(data);
         if(tmpString == "false")
         {
           this.showError("Access Denied");
-          return false;
         }
         else
         {
@@ -34,11 +33,14 @@ export class Login {
           this.email = JSON.parse(tmpString).email;
           this.password = JSON.parse(tmpString).password;
           this.auth.login(this.registerCredentials);
-
+          this.showLoading();
+          console.log("Hi");
+          setTimeout( data => {
+            this.nav.push('TabsPage');
+          }, 1500);
         }
       });
 
-    return true;
   }
   constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController, public restProvider:RestServiceProvider) {
 
@@ -50,42 +52,7 @@ export class Login {
 
 
   public login() {
-    console.log("Ciao");
-    this.showLoading();
-    if(this.validateUser())
-    {
-      setTimeout( data => {
-        this.nav.push('TabsPage');
-      }, 1500);
-      /*this.nav.setRoot('TabsPage');
-      this.nav.push('TabsPage');*/
-    }
-
-    /*if(this.email == "false" && this.password == "false")
-    {
-      this.showError("Access Denied");
-    }
-    else
-    {
-      this.auth.login(this.registerCredentials);
-      this.showError("Access Permit");
-
-    }*/
-
-    /*this.auth.login(this.registerCredentials).subscribe(allowed => {
-        if (allowed) {
-          this.showError("Access Permit");
-          this.nav.setRoot('TabsPage');
-          this.nav.push(TabsPage);
-        } else {
-
-          this.nav.setRoot('TabsPage');
-          this.nav.push('TabsPage');
-        }
-      },
-      error => {
-        this.showError(error);
-      });*/
+    this.validateUser();
   }
   showLoading() {
     this.loading = this.loadingCtrl.create({
@@ -96,7 +63,6 @@ export class Login {
   }
 
   showError(text) {
-    this.loading.dismiss();
 
     let alert = this.alertCtrl.create({
       title: 'Fail',

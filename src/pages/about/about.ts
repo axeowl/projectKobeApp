@@ -16,9 +16,19 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController, private auth: AuthService, public http: HttpClient, public restProvider: RestServiceProvider) {
 
-    this.email = this.auth.getUserInfo()["name"];
-    this.username = this.auth.getUserInfo()["email"];
-    this.isConnected = "Si"
+    this.username = this.auth.getUserInfo()["name"];
+    this.email = this.auth.getUserInfo()["email"];
+    this.http.get('https://projectkobe.herokuapp.com/issynchronized'+this.email+'').subscribe(data => {
+      var str = JSON.stringify(data);
+      this.isConnected = data["isConnected"];
+      if(this.isConnected)
+      {
+        this.isConnected = "Si";
+      }
+      else {
+        this.isConnected = "No";
+      }
+    });
   }
 
 

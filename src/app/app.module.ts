@@ -14,32 +14,30 @@ import { AuthService } from './../provider/auth-service';
 import { Login } from '../pages/login/login';
 import { OneSignal } from '@ionic-native/onesignal';
 import { TabsPageModule } from "../pages/tabs/tabs.module";
-import { RegisterPageModule } from "../pages/register/register.module";
 import { RestServiceProvider } from '../providers/rest-service/rest-service';
 import { HttpClientModule } from '@angular/common/http';
 import { Camera } from '@ionic-native/camera';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
-  import {RegisterPage} from "../pages/register/register";
+  import {RegisterPageModule} from "../pages/register/register.module";
   import {LoginModule} from "../pages/login/login.module";
+  import {SyncPageModule} from "../pages/sync/sync.module";
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     CameraPage,
-    HomePage,
-    SyncPage,
-    //TabsPage,
-    Login
+    HomePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     TabsPageModule,
+    LoginModule,
     RegisterPageModule,
-    HttpClientModule,
-    NgxQRCodeModule
+    SyncPageModule,
+    HttpClientModule
   ],
 
   bootstrap: [IonicApp],
