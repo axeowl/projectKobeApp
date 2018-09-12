@@ -13,9 +13,9 @@ export class RestServiceProvider {
   constructor(public http: HttpClient) {
     console.log('Hello RestServiceProvider Provider');
   }
-  getProducts() {
+  getProducts(id) {
     return new Promise(resolve => {
-      this.http.get('https://projectkobe.herokuapp.com/getproduct').subscribe(data => {
+      this.http.get('https://projectkobe.herokuapp.com/getproduct'+id).subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);
@@ -53,9 +53,9 @@ export class RestServiceProvider {
     });
   }
 
-  getUserInfo(id) {
+  getUserInfo(email) {
     return new Promise(resolve => {
-      this.http.get('https://projectkobe.herokuapp.com/getUserInfo'+id).subscribe(data => {
+      this.http.get('https://projectkobe.herokuapp.com/userinfo'+email).subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);

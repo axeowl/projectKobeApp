@@ -17,13 +17,14 @@ import { TabsPageModule } from "../pages/tabs/tabs.module";
 import { RestServiceProvider } from '../providers/rest-service/rest-service';
 import { HttpClientModule } from '@angular/common/http';
 import { Camera } from '@ionic-native/camera';
-import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
-  import {RegisterPageModule} from "../pages/register/register.module";
-  import {LoginModule} from "../pages/login/login.module";
-  import {SyncPageModule} from "../pages/sync/sync.module";
+import {RegisterPageModule} from "../pages/register/register.module";
+import {LoginModule} from "../pages/login/login.module";
+import {SyncPageModule} from "../pages/sync/sync.module";
+import { IBeacon } from "@ionic-native/ibeacon";
+import { BeaconProvider } from "../pages/beacon/beacon";
 
-@NgModule({
+  @NgModule({
   declarations: [
     MyApp,
     AboutPage,
@@ -55,11 +56,13 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     SplashScreen,
     BackgroundGeolocation,
     OneSignal,
+    [BeaconProvider],
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthService,
     RestServiceProvider,
     Camera,
-    BarcodeScanner
+    BarcodeScanner,
+    IBeacon
   ]
 })
 export class AppModule {}

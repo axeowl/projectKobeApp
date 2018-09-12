@@ -17,15 +17,18 @@ export class HomePage {
 
 
   getProducts() {
-    this.restProvider.getProducts()
-      .then(data => {
-        this.products = data;
-        console.log(data);
-      });
+    this.restProvider.getUserInfo(this.email).then(data => {
+      this.restProvider.getProducts(data["iduser"])
+        .then(data => {
+          this.products = data;
+          console.log(data);
+        });
+    });
   }
 
   deleteFunct(item)
   {
+    console.log(item);
     this.restProvider.deleteProduct(item);
     this.getProducts();
     this.navCtrl.setRoot(this.navCtrl.getActive().component);

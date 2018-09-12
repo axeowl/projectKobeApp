@@ -1,4 +1,7 @@
-<ion-header>
+<ion-header ng-app="App">
+  <script src="js/ng-cordova-beacon.min.js"></script>
+  <script src="beacon.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <ion-navbar>
     <ion-title>
       About
@@ -6,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<!--<ion-content padding>
   <ion-list>
 
     <ion-item>
@@ -28,4 +31,29 @@
     Applicazione creata per la tesi triennale in ingegneria dell'informazione dal tesista: Taccardi Benito, relatore: Prof.Luigi Patrono
   </p>
 
+</ion-content>-->
+
+<ion-content ng-controller="ExampleController">
+  <div class="list">
+    <div class="item" ng-repeat="(key, value) in beacons">
+      <div class="row">
+        <div class="col truncate">
+          {{value.uuid}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          major: {{value.major}}
+        </div>
+        <div class="col">
+          minor: {{value.minor}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {{value.proximity}}
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

@@ -7,20 +7,17 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.example.hello"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.example.hello"
     },
     "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.example.hello"
     },
     "cordova-plugin-mauron85-background-geolocation": {
       "GOOGLE_PLAY_SERVICES_VERSION": "11+",
@@ -31,12 +28,22 @@
       "ACCOUNT_LABEL": "@string/app_name",
       "ACCOUNT_TYPE": "$PACKAGE_NAME.account",
       "CONTENT_AUTHORITY": "$PACKAGE_NAME",
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.example.hello"
     },
     "onesignal-cordova-plugin": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.example.hello"
     },
-    "cordova-plugin-camera": {
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "com.unarin.cordova.beacon": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
