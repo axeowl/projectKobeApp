@@ -22,7 +22,8 @@ import {RegisterPageModule} from "../pages/register/register.module";
 import {LoginModule} from "../pages/login/login.module";
 import {SyncPageModule} from "../pages/sync/sync.module";
 import { IBeacon } from "@ionic-native/ibeacon";
-import { BeaconProvider } from "../pages/beacon/beacon";
+import { BeaconProvider } from "../provider/beacon-provider";
+import { Device } from '@ionic-native/device';
 
   @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { BeaconProvider } from "../pages/beacon/beacon";
     RestServiceProvider,
     Camera,
     BarcodeScanner,
-    IBeacon
+    IBeacon,
+    Device
   ]
 })
 export class AppModule {}

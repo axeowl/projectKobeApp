@@ -5,7 +5,7 @@ import { AuthService } from './../../provider/auth-service';
 import {RestServiceProvider} from "../../providers/rest-service/rest-service";
 import {IBeacon} from "@ionic-native/ibeacon";
 import  { NgZone } from "@angular/core";
-import { BeaconProvider } from "../beacon/beacon";
+import { BeaconProvider } from "../../provider/beacon-provider";
 import { BeaconModel } from "../beacon/beacon-model";
 
 @Component({
@@ -18,7 +18,8 @@ export class AboutPage {
   email: any;
   isConnected: any;
   beacons: BeaconModel[] = [];
-  zone:any;
+  distance: any[] = [];
+  zone: NgZone;
 
   constructor(public navCtrl: NavController, public platform: Platform, private auth: AuthService, public http: HttpClient, public restProvider: RestServiceProvider, private ibeacon: IBeacon, public beaconProvider: BeaconProvider, public events: Events) {
 
@@ -52,7 +53,7 @@ export class AboutPage {
   listenToBeaconEvents() {
     this.events.subscribe('didRangeBeaconsInRegion', (data) => {
 
-// update the UI with the beacon list
+      // update the UI with the beacon list
       this.zone.run(() => {
 
         this.beacons = [];
@@ -60,6 +61,7 @@ export class AboutPage {
         let beaconList = data.beacons;
         beaconList.forEach((beacon) => {
           let beaconObject = new BeaconModel(beacon);
+          this.distance.push(this.calculateDistance(beacon.rssi));
           this.beacons.push(beaconObject);
         });
 
@@ -68,5 +70,22 @@ export class AboutPage {
     });
   }
 
+  calculateDistance(rssi) {
+
+    var txPower = -59 //hard coded power value. Usually ranges between -59 to -65
+
+    if (rssi == 0) {
+      return -1.0;
+    }
+
+    var ratio = rssi*1.0/txPower;
+    if (ratio < 1.0) {
+      return Math.pow(ratio,10);
+    }
+    else {
+      var distance =  (0.89976)*Math.pow(ratio,7.7095) + 0.111;
+      return distance;
+    }
+  }
 
 }
