@@ -11,7 +11,7 @@ import { RestServiceProvider } from "../../providers/rest-service/rest-service";
 export class Login {
 
   loading: Loading;
-  registerCredentials = { email: 'benny@gmail.com', password: 'prova' };
+  registerCredentials = { email: 'benny.taccardi@gmail.com', password: 'benny' };
   email: any;
   password: any;
   app: any;

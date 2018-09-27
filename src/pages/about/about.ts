@@ -28,7 +28,7 @@ export class AboutPage {
     this.http.get('https://projectkobe.herokuapp.com/issynchronized'+this.email+'').subscribe(data => {
       var str = JSON.stringify(data);
       this.isConnected = data["isConnected"];
-      if(this.isConnected)
+      if(this.isConnected == 1)
       {
         this.isConnected = "Si";
       }
@@ -37,55 +37,7 @@ export class AboutPage {
       }
     });
 
-    this.zone = new NgZone({ enableLongStackTrace: false });
-
-  }
-  ionViewDidLoad() {
-    this.platform.ready().then(() => {
-      this.beaconProvider.initialise().then((isInitialised) => {
-        if (isInitialised) {
-          this.listenToBeaconEvents();
-        }
-      });
-    });
   }
 
-  listenToBeaconEvents() {
-    this.events.subscribe('didRangeBeaconsInRegion', (data) => {
-
-      // update the UI with the beacon list
-      this.zone.run(() => {
-
-        this.beacons = [];
-
-        let beaconList = data.beacons;
-        beaconList.forEach((beacon) => {
-          let beaconObject = new BeaconModel(beacon);
-          this.distance.push(this.calculateDistance(beacon.rssi));
-          this.beacons.push(beaconObject);
-        });
-
-      });
-
-    });
-  }
-
-  calculateDistance(rssi) {
-
-    var txPower = -59 //hard coded power value. Usually ranges between -59 to -65
-
-    if (rssi == 0) {
-      return -1.0;
-    }
-
-    var ratio = rssi*1.0/txPower;
-    if (ratio < 1.0) {
-      return Math.pow(ratio,10);
-    }
-    else {
-      var distance =  (0.89976)*Math.pow(ratio,7.7095) + 0.111;
-      return distance;
-    }
-  }
 
 }

@@ -23,9 +23,37 @@ export class RestServiceProvider {
     });
   }
 
+  getPurchasedProducts(id) {
+    return new Promise(resolve => {
+      this.http.get('https://projectkobe.herokuapp.com/getpurchasedproduct'+id).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
   deleteProduct(id) {
     return new Promise(resolve => {
       this.http.get('https://projectkobe.herokuapp.com/deleteproduct'+id).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+  reinsertProduct(id) {
+    return new Promise(resolve => {
+      this.http.get('https://projectkobe.herokuapp.com/reinsertproduct'+id).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+  purchaseProduct(id) {
+    return new Promise(resolve => {
+      this.http.get('https://projectkobe.herokuapp.com/purchaseproduct'+id).subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);

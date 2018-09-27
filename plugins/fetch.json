@@ -10,7 +10,7 @@
   "cordova-plugin-device": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-device@2.0.2"
+      "id": "cordova-plugin-device@^2.0.2"
     },
     "is_top_level": true,
     "variables": {}
@@ -59,6 +59,47 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-camera@4.0.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "phonegap-plugin-barcodescanner": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-barcodescanner@8.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.unarin.cordova.beacon": {
+    "source": {
+      "type": "git",
+      "id": "https://github.com/petermetz/cordova-plugin-ibeacon.git",
+      "subdir": "."
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-local-notification": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-local-notification"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-badge": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-badge@>=0.8.5"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-tts": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-tts"
     },
     "is_top_level": true,
     "variables": {}

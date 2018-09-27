@@ -9,7 +9,7 @@ package io.ionic.starter;
 
 public final class Manifest {
   public static final class permission {
-    public static final String RECEIVE_ADM_MESSAGE="io.ionic.starter.permission.RECEIVE_ADM_MESSAGE";
+    public static final String RECEIVE_ADM_MESSAGE="com.example.hello.permission.RECEIVE_ADM_MESSAGE";
     /**
      * Create a unique permission for your app and use it so only your app can receive your OneSignal messages.
      */

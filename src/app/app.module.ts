@@ -24,6 +24,10 @@ import {SyncPageModule} from "../pages/sync/sync.module";
 import { IBeacon } from "@ionic-native/ibeacon";
 import { BeaconProvider } from "../provider/beacon-provider";
 import { Device } from '@ionic-native/device';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+import { TextToSpeech } from "@ionic-native/text-to-speech";
+  import {PurchasedPage} from "../pages/purchased/purchased";
+  import {PurchasedPageModule} from "../pages/purchased/purchased.module";
 
   @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { Device } from '@ionic-native/device';
     LoginModule,
     RegisterPageModule,
     SyncPageModule,
+    PurchasedPageModule,
     HttpClientModule
   ],
 
@@ -50,6 +55,7 @@ import { Device } from '@ionic-native/device';
     HomePage,
     TabsPage,
     SyncPage,
+    PurchasedPage,
     Login
   ],
   providers: [
@@ -64,7 +70,9 @@ import { Device } from '@ionic-native/device';
     Camera,
     BarcodeScanner,
     IBeacon,
-    Device
+    Device,
+    LocalNotifications,
+    TextToSpeech
   ]
 })
 export class AppModule {}

@@ -7,10 +7,13 @@
 
   </head>
 
-  <body ng-controller="MainCtrl">
+  <body ng-controller="MainCtrl" id="body">
 
 
     <ion-content class="outer-content">
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
       <ion-menu [content]="content">
         <ion-header>
           <ion-toolbar>
@@ -28,27 +31,28 @@
       <!-- main navigation -->
       <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
 
-
       <ion-list>
         <ion-list-header>
 
           <button ion-button menuToggle="right" (click)="openMenu()"> <ion-icon name="menu"> </ion-icon></button>
-          Lista della spesa
+          Shopping list
         </ion-list-header>
 
+       <!-- <img *ngIf="!products" class="noProduct" src="assets/icon/no.jpg">-->
+
         <ion-item-sliding *ngFor="let p of products">
-          <ion-item>
+          <ion-item no-lines (click)="speech(p.productname)">
             <ion-avatar item-start>
               <img src= "{{ p.path }}">
             </ion-avatar>
             <h2> {{ p.productname }} </h2>
           </ion-item>
           <ion-item-options>
-            <button (click)="deleteFunct(p.idproduct)" ion-button color="danger" icon-start>
+            <button (click)="deleteFunct(p.idproduct, $event)" ion-button color="danger" icon-start large>
               <ion-icon name="trash"></ion-icon>
             </button>
-            <button ion-button color="light" icon-start>
-              <ion-icon name="paper"></ion-icon>
+            <button ion-button color="secondary" (click)="purchaseFunct(p.idproduct, $event)" icon-start large>
+              <ion-icon name="checkmark"></ion-icon>
             </button>
           </ion-item-options>
         </ion-item-sliding>

@@ -3,7 +3,7 @@ import {NavController, IonicApp, MenuController} from 'ionic-angular';
 import { AuthService } from './../../provider/auth-service';
 import { RestServiceProvider } from '../../providers/rest-service/rest-service';
 import { Login } from '../login/login';
-
+import { TextToSpeech } from "@ionic-native/text-to-speech";
 
 @Component({
   selector: 'projectKobe',
@@ -17,6 +17,7 @@ export class HomePage {
 
 
   getProducts() {
+    this.products = null;
     this.restProvider.getUserInfo(this.email).then(data => {
       this.restProvider.getProducts(data["iduser"])
         .then(data => {
@@ -24,29 +25,56 @@ export class HomePage {
           console.log(data);
         });
     });
+
+  }
+  doRefresh(refresher) {
+
+    this.getProducts();
+    setTimeout(() => {
+      refresher.complete();
+    }, 500);
   }
 
-  deleteFunct(item)
+  doRefresh2()
+  {
+    this.getProducts();
+    setTimeout(() => {
+    }, 500);
+  }
+  deleteFunct(item, refresher)
   {
     console.log(item);
     this.restProvider.deleteProduct(item);
-    this.getProducts();
-    this.navCtrl.setRoot(this.navCtrl.getActive().component);
-  }
-
-  constructor(public menuCtrl: MenuController, public app: IonicApp,public navCtrl: NavController, private auth: AuthService, public restProvider: RestServiceProvider) {
-
-    let info = this.auth.getUserInfo();
-    this.username = info['name'];
-    this.email = info['email'];
-
-
+    this.doRefresh2();
+    /*this.getProducts();
+    this.navCtrl.setRoot(this.navCtrl.getActive().component);*/
 
   }
-  ionViewDidEnter() {
-    this.getProducts();
-  }
 
+
+  purchaseFunct(item, refresher)
+  {
+    console.log(item);
+    this.restProvider.purchaseProduct(item);
+    this.doRefresh2();
+    /*this.getProducts();
+    this.navCtrl.setRoot(this.navCtrl.getActive().component);*/
+
+  }
+  isEmpty()
+  {
+    if (this.products.lenght == 0)
+    {
+      return true;
+    }
+    return false;
+  }
+  speech(itemName)
+  {
+    this.tts.speak(itemName)
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
   logout():void
   {
     this.auth.logout();
@@ -59,6 +87,28 @@ export class HomePage {
     else
       this.menuCtrl.open();
   }
+  constructor(public menuCtrl: MenuController, public app: IonicApp,public navCtrl: NavController, private auth: AuthService, public restProvider: RestServiceProvider, public tts: TextToSpeech) {
+
+    let info = this.auth.getUserInfo();
+    this.username = info['name'];
+    this.email = info['email'];
+
+
+
+  }
+  ionViewWillEnter() {
+    this.getProducts();
+    this.doRefresh2();
+  }
+  ionViewDidLoad() {
+    this.getProducts();
+  }
+
+
+
+
+
+
 }
 
 
