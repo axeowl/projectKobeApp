@@ -1,6 +1,6 @@
 import {Component, NgZone} from '@angular/core';
 import {AboutPage} from '../about/about';
-import {CameraPage} from '../camera/camera';
+import {MapPage} from '../map/map';
 import {HomePage} from '../home/home';
 import {SyncPage} from '../sync/sync';
 import {Events, IonicPage, Platform} from 'ionic-angular';
@@ -19,7 +19,7 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
-  tab3Root = CameraPage;
+  tab3Root = MapPage;
   tab4Root = SyncPage;
   tab5Root = PurchasedPage;
   beacons: BeaconModel[] = [];
@@ -45,13 +45,10 @@ export class TabsPage {
   listenToBeaconEvents() {
     this.events.subscribe('provic', (data) => {
 
-
-      alert("Sono qui");
       // update the UI with the beacon list
 
       this.zone.run(() => {
 
-        alert("Ciao");
         this.beacons = [];
         let beaconList = data.beacons;
         beaconList.forEach((beacon) => {

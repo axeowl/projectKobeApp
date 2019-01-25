@@ -30,24 +30,24 @@ var Camera = require('./Camera');
  */
 
 /**
- * @exports camera
+ * @exports map
  */
 var cameraExport = {};
 
-// Tack on the Camera Constants to the base camera plugin.
+// Tack on the Camera Constants to the base map plugin.
 for (var key in Camera) {
     cameraExport[key] = Camera[key];
 }
 
 /**
  * Callback function that provides an error message.
- * @callback module:camera.onError
+ * @callback module:map.onError
  * @param {string} message - The message is provided by the device's native code.
  */
 
 /**
  * Callback function that provides the image data.
- * @callback module:camera.onSuccess
+ * @callback module:map.onSuccess
  * @param {string} imageData - Base64 encoding of the image data, _or_ the image file URI, depending on [`cameraOptions`]{@link module:camera.CameraOptions} in effect.
  * @example
  * // Show image
@@ -59,11 +59,11 @@ for (var key in Camera) {
  */
 
 /**
- * Optional parameters to customize the camera settings.
+ * Optional parameters to customize the map settings.
  * * [Quirks](#CameraOptions-quirks)
  * @typedef module:camera.CameraOptions
  * @type {Object}
- * @property {number} [quality=50] - Quality of the saved image, expressed as a range of 0-100, where 100 is typically full resolution with no loss from file compression. (Note that information about the camera's resolution is unavailable.)
+ * @property {number} [quality=50] - Quality of the saved image, expressed as a range of 0-100, where 100 is typically full resolution with no loss from file compression. (Note that information about the map's resolution is unavailable.)
  * @property {module:Camera.DestinationType} [destinationType=FILE_URI] - Choose the format of the return value.
  * @property {module:Camera.PictureSourceType} [sourceType=CAMERA] - Set the source of the picture.
  * @property {Boolean} [allowEdit=false] - Allow simple editing of image before selection.
@@ -74,18 +74,18 @@ for (var key in Camera) {
  * @property {Boolean} [correctOrientation] - Rotate the image to correct for the orientation of the device during capture.
  * @property {Boolean} [saveToPhotoAlbum] - Save the image to the photo album on the device after capture.
  * @property {module:CameraPopoverOptions} [popoverOptions] - iOS-only options that specify popover location in iPad.
- * @property {module:Camera.Direction} [cameraDirection=BACK] - Choose the camera to use (front- or back-facing).
+ * @property {module:Camera.Direction} [cameraDirection=BACK] - Choose the map to use (front- or back-facing).
  */
 
 /**
- * @description Takes a photo using the camera, or retrieves a photo from the device's
+ * @description Takes a photo using the map, or retrieves a photo from the device's
  * image gallery.  The image is passed to the success callback as a
  * Base64-encoded `String`, or as the URI for the image file.
  *
- * The `camera.getPicture` function opens the device's default camera
+ * The `map.getPicture` function opens the device's default map
  * application that allows users to snap pictures by default - this behavior occurs,
  * when `Camera.sourceType` equals [`Camera.PictureSourceType.CAMERA`]{@link module:Camera.PictureSourceType}.
- * Once the user snaps the photo, the camera application closes and the application is restored.
+ * Once the user snaps the photo, the map application closes and the application is restored.
  *
  * If `Camera.sourceType` is `Camera.PictureSourceType.PHOTOLIBRARY` or
  * `Camera.PictureSourceType.SAVEDPHOTOALBUM`, then a dialog displays
@@ -123,10 +123,10 @@ for (var key in Camera) {
  * - WP8
  * - Ubuntu
  *
- * More examples [here](#camera-getPicture-examples). Quirks [here](#camera-getPicture-quirks).
+ * More examples [here](#map-getPicture-examples). Quirks [here](#map-getPicture-quirks).
  *
  * @example
- * navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
+ * navigator.map.getPicture(cameraSuccess, cameraError, cameraOptions);
  * @param {module:camera.onSuccess} successCallback
  * @param {module:camera.onError} errorCallback
  * @param {module:camera.CameraOptions} options CameraOptions
@@ -159,7 +159,7 @@ cameraExport.getPicture = function (successCallback, errorCallback, options) {
 
 /**
  * Removes intermediate image files that are kept in temporary storage
- * after calling [`camera.getPicture`]{@link module:camera.getPicture}. Applies only when the value of
+ * after calling [`map.getPicture`]{@link module:camera.getPicture}. Applies only when the value of
  * `Camera.sourceType` equals `Camera.PictureSourceType.CAMERA` and the
  * `Camera.destinationType` equals `Camera.DestinationType.FILE_URI`.
  *
@@ -168,7 +168,7 @@ cameraExport.getPicture = function (successCallback, errorCallback, options) {
  * - iOS
  *
  * @example
- * navigator.camera.cleanup(onSuccess, onFail);
+ * navigator.map.cleanup(onSuccess, onFail);
  *
  * function onSuccess() {
  *     console.log("Camera cleanup success.")

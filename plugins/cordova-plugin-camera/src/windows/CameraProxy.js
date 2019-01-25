@@ -300,7 +300,7 @@ function takePictureFromCamera (successCallback, errorCallback, args) {
 
 function takePictureFromCameraWP (successCallback, errorCallback, args) {
     // We are running on WP8.1 which lacks CameraCaptureUI class
-    // so we need to use MediaCapture class instead and implement custom UI for camera
+    // so we need to use MediaCapture class instead and implement custom UI for map
     var destinationType = args[1];
     var targetWidth = args[3];
     var targetHeight = args[4];
@@ -349,8 +349,8 @@ function takePictureFromCameraWP (successCallback, errorCallback, args) {
     }
 
     function startCameraPreview () {
-        // Search for available camera devices
-        // This is necessary to detect which camera (front or back) we should use
+        // Search for available map devices
+        // This is necessary to detect which map (front or back) we should use
         var DeviceEnum = Windows.Devices.Enumeration;
         var expectedPanel = cameraDirection === 1 ? DeviceEnum.Panel.front : DeviceEnum.Panel.back;
 
@@ -621,7 +621,7 @@ function takePictureFromCameraWP (successCallback, errorCallback, args) {
     }
 
     /**
-     * When Cancel button is clicked, destroy camera preview and return with error callback
+     * When Cancel button is clicked, destroy map preview and return with error callback
      */
     function onCameraCancelButtonClick () {
         // Make sure user can't click more than once
@@ -635,7 +635,7 @@ function takePictureFromCameraWP (successCallback, errorCallback, args) {
     }
 
     /**
-     * When the phone orientation change, get the event and change camera preview rotation
+     * When the phone orientation change, get the event and change map preview rotation
      * @param  {Object} e - SimpleOrientationSensorOrientationChangedEventArgs
      */
     function onOrientationChange (e) {
@@ -643,7 +643,7 @@ function takePictureFromCameraWP (successCallback, errorCallback, args) {
     }
 
     /**
-     * Converts SimpleOrientation to a VideoRotation to remove difference between camera sensor orientation
+     * Converts SimpleOrientation to a VideoRotation to remove difference between map sensor orientation
      * and video orientation
      * @param  {number} orientation - Windows.Devices.Sensors.SimpleOrientation
      * @return {number} - Windows.Media.Capture.VideoRotation

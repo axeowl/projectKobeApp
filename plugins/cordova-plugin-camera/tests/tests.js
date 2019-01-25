@@ -23,7 +23,7 @@
 /* eslint-env jasmine */
 
 exports.defineAutoTests = function () {
-    describe('Camera (navigator.camera)', function () {
+    describe('Camera (navigator.map)', function () {
         it('should exist', function () {
             expect(navigator.camera).toBeDefined();
         });
@@ -34,7 +34,7 @@ exports.defineAutoTests = function () {
         });
     });
 
-    describe('Camera Constants (window.Camera + navigator.camera)', function () {
+    describe('Camera Constants (window.Camera + navigator.map)', function () {
         it('camera.spec.1 window.Camera should exist', function () {
             expect(window.Camera).toBeDefined();
         });
@@ -85,7 +85,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
     var fileEntry = null;
     var pageStartTime = +new Date();
 
-    // default camera options
+    // default map options
     var camQualityDefault = ['50', 50];
     var camDestinationTypeDefault = ['FILE_URI', 1];
     var camPictureSourceTypeDefault = ['CAMERA', 1];
@@ -425,7 +425,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             '<ol> <li>All default options. Should be able to edit once picture is taken and will be saved to library.</li>' +
             '</p><li>sourceType=PHOTOLIBRARY<br>Should be able to see picture that was just taken in previous test and edit when selected</li>' +
             '</p><li>sourceType=Camera<br>allowEdit=false<br>saveToPhotoAlbum=false<br>Should not be able to edit when taken and will not save to library</li>' +
-            '</p><li>encodingType=PNG<br>allowEdit=true<br>saveToPhotoAlbum=true<br>cameraDirection=FRONT<br>Should bring up front camera. Verify in status box info URL that image is encoded as PNG.</li>' +
+            '</p><li>encodingType=PNG<br>allowEdit=true<br>saveToPhotoAlbum=true<br>cameraDirection=FRONT<br>Should bring up front map. Verify in status box info URL that image is encoded as PNG.</li>' +
             '</p><li>sourceType=SAVEDPHOTOALBUM<br>mediaType=VIDEO<br>Should only be able to select a video</li>' +
             '</p><li>sourceType=SAVEDPHOTOALBUM<br>mediaType=PICTURE<br>allowEdit=false<br>Should only be able to select a picture and not edit</li>' +
             '</p><li>sourceType=PHOTOLIBRARY<br>mediaType=ALLMEDIA<br>allowEdit=true<br>Should be able to select pics and videos and edit picture if selected</li>' +
@@ -435,7 +435,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
     var inputs_div = '<h2>Native File Inputs</h2>' +
             'For the following tests, status box should update with file selected' +
             '</p><div>input type=file <input type="file" class="testInputTag"></div>' +
-            '<div>capture=camera <input type="file" accept="image/*;capture=camera" class="testInputTag"></div>' +
+            '<div>capture=map <input type="file" accept="image/*;capture=map" class="testInputTag"></div>' +
             '<div>capture=camcorder <input type="file" accept="video/*;capture=camcorder" class="testInputTag"></div>' +
             '<div>capture=microphone <input type="file" accept="audio/*;capture=microphone" class="testInputTag"></div>';
     var actions_div = '<h2>Actions</h2>' +

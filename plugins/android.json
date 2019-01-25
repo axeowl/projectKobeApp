@@ -51,10 +51,32 @@
     },
     "cordova-plugin-tts": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_ANDROID": "AIzaSyAvbH5dUbIRbV1s3OiPa5ekVYgc6sgherg",
+      "PLAY_SERVICES_VERSION": "15.0.1",
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+      "OKHTTP_VERSION": "3.+",
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-badge": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   }

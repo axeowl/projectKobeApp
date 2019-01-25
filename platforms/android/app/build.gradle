@@ -97,6 +97,7 @@ apply from: "../phonegap-plugin-barcodescanner/hello-barcodescanner.gradle"
 apply from: "../com.unarin.cordova.beacon/starter-cordova-plugin-ibeacon.gradle"
 apply from: "../cordova-plugin-badge/starter-badge.gradle"
 apply from: "../cordova-plugin-local-notification/starter-localnotification.gradle"
+apply from: "../cordova-plugin-googlemaps/starter-tbxml-android.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -165,6 +166,7 @@ task cdvPrintProps << {
 android {
 
     defaultConfig {
+        multiDexEnabled true
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
         applicationId privateHelpers.extractStringFromManifest("package")
 
@@ -274,6 +276,10 @@ dependencies {
     compile "me.leolin:ShortcutBadger:1.1.17@aar"
     compile "com.google.firebase:firebase-messaging:11.6.2"
     compile "com.android.support:support-v4:26.+"
+    compile "com.google.android.gms:play-services-maps:15.0.1"
+    compile "com.google.android.gms:play-services-location:15.0.1"
+    compile "com.android.support:support-core-utils:27.+"
+    compile "com.squareup.okhttp3:okhttp:3.+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

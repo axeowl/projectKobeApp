@@ -5,7 +5,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_launcher_icon.png.flat",
@@ -25,11 +25,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
@@ -41,15 +41,15 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
@@ -61,7 +61,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_normal.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dummy_mylocation_button_shadow.xml.flat",
+        "source": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\src\\main\\res\\drawable\\dummy_mylocation_button_shadow.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi_screen.png.flat",
@@ -85,15 +89,15 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -133,7 +137,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
@@ -145,7 +149,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
@@ -157,7 +161,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -189,7 +193,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_preferences.xml.flat",
@@ -200,20 +208,16 @@
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\barcodescanner-release-2.1.5.aar\\d7e2b8ee2207b32396bf3b9d853942b8\\res\\drawable-xxhdpi\\launcher_icon.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxxhdpi_screen.png.flat",
         "source": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_picker_list_item.xml.flat",
@@ -224,12 +228,12 @@
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xxhdpi_screen.png.flat",
         "source": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxhdpi\\screen.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_share.xml.flat",
@@ -241,15 +245,15 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
@@ -257,7 +261,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\color\\common_google_signin_btn_tint.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_authenticator.xml.flat",
@@ -265,11 +269,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-hdpi_screen.png.flat",
@@ -281,7 +285,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_camera_provider_paths.xml.flat",
@@ -309,11 +313,15 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_dummy_infowindow.xml.flat",
+        "source": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\src\\main\\res\\layout\\dummy_infowindow.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_browser_actions_context_menu_row.xml.flat",
@@ -324,24 +332,28 @@
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_bookmark_picker_list_item.xml.flat",
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\barcodescanner-release-2.1.5.aar\\d7e2b8ee2207b32396bf3b9d853942b8\\res\\layout\\bookmark_picker_list_item.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dummy_my_location_button.png.flat",
+        "source": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\src\\main\\res\\drawable\\dummy_my_location_button.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xhdpi_screen.png.flat",
@@ -372,12 +384,12 @@
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -385,7 +397,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
@@ -405,7 +417,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
@@ -425,7 +437,7 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
@@ -449,11 +461,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\color\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-port-xxhdpi_screen.png.flat",
@@ -469,27 +481,27 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\a1f098202ca188a382113a25287246df\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
-    },
-    {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_syncadapter.xml.flat",
@@ -513,11 +525,11 @@
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
@@ -548,11 +560,11 @@
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\OneSignal-3.9.1.aar\\9509fc5d95bdb48a7f0d2000bdb819f7\\res\\layout\\onesignal_bgimage_notif_layout.xml"
     },
     {
-        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.2.aar\\1a7cc35c390a8fbd24565b284a30751f\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
-    },
-    {
         "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw_consumer_onesignal_keep.xml.flat",
         "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\OneSignal-3.9.1.aar\\9509fc5d95bdb48a7f0d2000bdb819f7\\res\\raw\\consumer_onesignal_keep.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\projectKobe\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "C:\\Users\\Benny\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\d91baff84a240828d7d813770cb05383\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     }
 ]

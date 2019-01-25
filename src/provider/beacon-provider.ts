@@ -19,67 +19,6 @@
     constructor(public platform: Platform, public events: Events, public ibeacon: IBeacon, public localNotifications: LocalNotifications, public http: HttpClient) {
     }
 
-    /*initialise(): any {
-      this.region = [];
-      this.http.get('https://projectkobe.herokuapp.com/getmarket').subscribe(data => {
-
-        let promise = new Promise((resolve, reject) => {
-          // we need to be running on a device
-          if (this.platform.is('cordova')) {
-
-            // Request permission to use location on iOS
-            this.ibeacon.requestAlwaysAuthorization();
-
-            // create a new delegate and register it with the native layer
-            this.delegate = this.ibeacon.Delegate();
-
-            // Subscribe to some of the delegate's event handlers
-            this.delegate.didRangeBeaconsInRegion()
-              .subscribe(
-                data => {
-
-                  this.events.publish('didRangeBeaconsInRegion', data);
-                },
-                error => console.error()
-              );
-
-            // setup a beacon region
-            for(let i = 0;i<2;i++)
-            {
-              this.region[i] = this.ibeacon.BeaconRegion('deskBeacon' + i, data[i].UUID);
-              alert(data[i].UUID);
-            }
-
-            // start ranging
-            for(let i = 0; i<2; i++)
-            {
-              this.ibeacon.startRangingBeaconsInRegion(this.region[i])
-                .then(
-                  () => {
-                    resolve(true);
-                    alert("Ciao");
-                  },
-                  error => {
-                    console.error('Failed to begin monitoring: ', error);
-                    resolve(false);
-                  }
-                );
-
-            }
-
-
-
-          } else {
-            console.error("This application needs to be running on a device");
-            resolve(false);
-          }
-        });
-
-        return promise;
-      });
-
-
-    }*/
 
 
     initialise(): any {

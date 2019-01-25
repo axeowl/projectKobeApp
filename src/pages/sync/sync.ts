@@ -17,7 +17,7 @@ import {AuthService} from "../../provider/auth-service";
 })
 export class SyncPage {
 
-  qrData = "Ciao";
+  qrData = "ciao";
   createdCode = null;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient,  private auth: AuthService) {

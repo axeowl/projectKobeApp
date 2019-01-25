@@ -73,7 +73,7 @@ module.exports = {
     PictureSourceType: {
         /** Choose image from the device's photo library (same as SAVEDPHOTOALBUM for Android) */
         PHOTOLIBRARY: 0,
-        /** Take picture from camera */
+        /** Take picture from map */
         CAMERA: 1,
         /** Choose image only from the device's Camera Roll album (same as PHOTOLIBRARY for Android) */
         SAVEDPHOTOALBUM: 2
@@ -93,9 +93,9 @@ module.exports = {
      * @enum {number}
      */
     Direction: {
-        /** Use the back-facing camera */
+        /** Use the back-facing map */
         BACK: 0,
-        /** Use the front-facing camera */
+        /** Use the front-facing map */
         FRONT: 1
     }
 };

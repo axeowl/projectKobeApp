@@ -42,7 +42,7 @@
   "cordova-plugin-mauron85-background-geolocation": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-mauron85-background-geolocation@2.3.5"
+      "id": "cordova-plugin-mauron85-background-geolocation@^2.3.5"
     },
     "is_top_level": true,
     "variables": {}
@@ -102,6 +102,69 @@
       "id": "cordova-plugin-tts"
     },
     "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps@^2.4.6"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyAAcjTV6GR9ij0IwB0IWPDtvxFotGtAnCo",
+      "API_KEY_FOR_IOS": "AIzaSyAAcjTV6GR9ij0IwB0IWPDtvxFotGtAnCo"
+    }
+  },
+  "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+    "source": {
+      "type": "registry",
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-actionsheet": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-actionsheet@2"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-dialogs": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-dialogs@*"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@^4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+    }
+  },
+  "cordova-plugin-nativegeocoder": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-nativegeocoder"
+    },
+    "is_top_level": true,
+    "variables": {
+      "LOCATION_WHEN_IN_USE_DESCRIPTION": "Use geocoder service"
+    }
+  },
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support@1.7.1"
+    },
+    "is_top_level": false,
     "variables": {}
   }
 }

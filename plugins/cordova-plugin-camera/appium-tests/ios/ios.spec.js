@@ -22,7 +22,7 @@
 // these tests are meant to be executed by Cordova Paramedic test runner
 // you can find it here: https://github.com/apache/cordova-paramedic/
 // it is not necessary to do a full CI setup to run these tests
-// just run "node cordova-paramedic/main.js --platform ios --plugin cordova-plugin-camera"
+// just run "node cordova-paramedic/main.js --platform ios --plugin cordova-plugin-map"
 
 'use strict';
 
@@ -340,7 +340,7 @@ describe('Camera tests iOS.', function () {
 
         // getPicture(), then dismiss
         // wait for the error callback to be called
-        it('camera.ui.spec.2 Dismissing the camera', function (done) {
+        it('camera.ui.spec.2 Dismissing the map', function (done) {
             checkSession(done);
             if (!isDevice) {
                 pending('Camera is not available on iOS simulator');
@@ -494,7 +494,7 @@ describe('Camera tests iOS.', function () {
                 if (spec.options.sourceType === cameraConstants.PictureSourceType.CAMERA &&
                     spec.options.destinationType === cameraConstants.DestinationType.NATIVE_URI) {
                     pending('Skipping: cannot prevent iOS from saving the picture to photo library and cannot delete it. ' +
-                        'For more info, see iOS quirks here: https://github.com/apache/cordova-plugin-camera#ios-quirks-1');
+                        'For more info, see iOS quirks here: https://github.com/apache/cordova-plugin-map#ios-quirks-1');
                 }
 
                 runSpec(spec.options, done, pending).done(done);

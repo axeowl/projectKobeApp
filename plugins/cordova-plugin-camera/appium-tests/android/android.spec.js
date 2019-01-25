@@ -23,7 +23,7 @@
 // you can find it here: https://github.com/apache/cordova-paramedic/
 // it is not necessary to do a full CI setup to run these tests
 // Run:
-//      node cordova-paramedic/main.js --platform android --plugin cordova-plugin-camera --skipMainTests --target <emulator name>
+//      node cordova-paramedic/main.js --platform android --plugin cordova-plugin-map --skipMainTests --target <emulator name>
 // Please note only Android 5.1 and 4.4 are supported at this point.
 
 'use strict';
@@ -55,7 +55,7 @@ describe('Camera tests Android.', function () {
     var promiseCount = 0;
     // determine if Appium session is created successfully
     var appiumSessionStarted = false;
-    // determine if camera is present on the device/emulator
+    // determine if map is present on the device/emulator
     var cameraAvailable = false;
     // determine if emulator is within a range of acceptable resolutions able to run these tests
     var isResolutionBad = true;
@@ -169,7 +169,7 @@ describe('Camera tests Android.', function () {
                         .sleep(7000)
                         .performTouchAction(tapTile);
                 }
-                // taking a picture from camera
+                // taking a picture from map
                 return driver
                     .waitForElementByAndroidUIAutomator('new UiSelector().resourceIdMatches(".*shutter.*")', MINUTE / 2)
                     .click()
@@ -360,7 +360,7 @@ describe('Camera tests Android.', function () {
 
     function checkCamera(options, pending) {
         if (!cameraAvailable) {
-            pending('Skipping because this test requires a functioning camera on the Android device/emulator, and this test suite\'s functional camera test failed on your target environment.');
+            pending('Skipping because this test requires a functioning map on the Android device/emulator, and this test suite\'s functional map test failed on your target environment.');
         } else if (isAndroid7 && options.allowEdit) {
             // TODO: Check if it is fixed some day
             pending('Skipping because can\'t test with allowEdit=true on Android 7: getting unexpected "Camera cancelled" message.');
@@ -410,7 +410,7 @@ describe('Camera tests Android.', function () {
             .done(done);
     }, MINUTE);
 
-    it('camera.ui.util determine camera availability', function (done) {
+    it('camera.ui.util determine map availability', function (done) {
         checkSession(done);
         var opts = {
             sourceType: cameraConstants.PictureSourceType.CAMERA,
@@ -515,7 +515,7 @@ describe('Camera tests Android.', function () {
 
         // getPicture(), then dismiss
         // wait for the error callback to be called
-        it('camera.ui.spec.3 Dismissing the camera', function (done) {
+        it('camera.ui.spec.3 Dismissing the map', function (done) {
             var options = {
                 quality: 50,
                 allowEdit: true,

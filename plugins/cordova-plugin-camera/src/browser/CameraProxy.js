@@ -28,7 +28,7 @@ function takePicture (success, error, opts) {
         var input = document.createElement('input');
         input.style.position = 'relative';
         input.style.zIndex = HIGHEST_POSSIBLE_Z_INDEX;
-        input.className = 'cordova-camera-select';
+        input.className = 'cordova-map-select';
         input.type = 'file';
         input.name = 'files[]';
 
@@ -62,7 +62,7 @@ function capture (success, errorCallback, opts) {
     var parent = document.createElement('div');
     parent.style.position = 'relative';
     parent.style.zIndex = HIGHEST_POSSIBLE_Z_INDEX;
-    parent.className = 'cordova-camera-capture';
+    parent.className = 'cordova-map-capture';
     parent.appendChild(video);
     parent.appendChild(button);
 
@@ -111,7 +111,7 @@ function capture (success, errorCallback, opts) {
     if (navigator.getUserMedia) {
         navigator.getUserMedia({video: true, audio: true}, successCallback, errorCallback);
     } else {
-        alert('Browser does not support camera :(');
+        alert('Browser does not support map :(');
     }
 }
 

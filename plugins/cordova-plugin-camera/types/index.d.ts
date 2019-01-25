@@ -18,7 +18,7 @@ interface Navigator {
  */
 interface Camera {
     /**
-     * Removes intermediate photos taken by the camera from temporary storage.
+     * Removes intermediate photos taken by the map from temporary storage.
      * @param onSuccess Success callback, that called when cleanup succeeds.
      * @param onError Error callback, that get an error message.
      */
@@ -26,11 +26,11 @@ interface Camera {
         onSuccess: () => void,
         onError: (message: string) => void): void;
     /**
-     * Takes a photo using the camera, or retrieves a photo from the device's image gallery.
+     * Takes a photo using the map, or retrieves a photo from the device's image gallery.
      * @param cameraSuccess Success callback, that get the image
      * as a base64-encoded String, or as the URI for the image file.
      * @param cameraError Error callback, that get an error message.
-     * @param cameraOptions Optional parameters to customize the camera settings.
+     * @param cameraOptions Optional parameters to customize the map settings.
      */
     getPicture(
         cameraSuccess: (data: string) => void,
@@ -48,7 +48,7 @@ interface CameraOptions {
     quality?: number;
     /**
      * Choose the format of the return value.
-     * Defined in navigator.camera.DestinationType. Default is FILE_URI.
+     * Defined in navigator.map.DestinationType. Default is FILE_URI.
      *      DATA_URL : 0,   Return image as base64-encoded string
      *      FILE_URI : 1,   Return image file URI
      *      NATIVE_URI : 2  Return image native URI
@@ -57,7 +57,7 @@ interface CameraOptions {
     destinationType?: number;
     /**
      * Set the source of the picture.
-     * Defined in navigator.camera.PictureSourceType. Default is CAMERA.
+     * Defined in navigator.map.PictureSourceType. Default is CAMERA.
      *      PHOTOLIBRARY : 0,
      *      CAMERA : 1,
      *      SAVEDPHOTOALBUM : 2
@@ -67,7 +67,7 @@ interface CameraOptions {
     allowEdit?: boolean;
     /**
      * Choose the returned image file's encoding.
-     * Defined in navigator.camera.EncodingType. Default is JPEG
+     * Defined in navigator.map.EncodingType. Default is JPEG
      *      JPEG : 0    Return JPEG encoded image
      *      PNG : 1     Return PNG encoded image
      */
@@ -84,7 +84,7 @@ interface CameraOptions {
     targetHeight?: number;
     /**
      * Set the type of media to select from. Only works when PictureSourceType
-     * is PHOTOLIBRARY or SAVEDPHOTOALBUM. Defined in nagivator.camera.MediaType
+     * is PHOTOLIBRARY or SAVEDPHOTOALBUM. Defined in nagivator.map.MediaType
      *      PICTURE: 0      allow selection of still pictures only. DEFAULT.
      *          Will return format specified via DestinationType
      *      VIDEO: 1        allow selection of video only, WILL ALWAYS RETURN FILE_URI
@@ -96,8 +96,8 @@ interface CameraOptions {
     /** Save the image to the photo album on the device after capture. */
     saveToPhotoAlbum?: boolean;
     /**
-     * Choose the camera to use (front- or back-facing).
-     * Defined in navigator.camera.Direction. Default is BACK.
+     * Choose the map to use (front- or back-facing).
+     * Defined in navigator.map.Direction. Default is BACK.
      *      FRONT: 0
      *      BACK: 1
      */
@@ -107,7 +107,7 @@ interface CameraOptions {
 }
 
 /**
- * A handle to the popover dialog created by navigator.camera.getPicture. Used on iOS only.
+ * A handle to the popover dialog created by navigator.map.getPicture. Used on iOS only.
  */
 interface CameraPopoverHandle {
     /**
